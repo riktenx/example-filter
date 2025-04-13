@@ -1,0 +1,3 @@
+readme
+general/highlight
+general/hide

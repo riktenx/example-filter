@@ -1,0 +1,50 @@
+/*@ define:module:readme
+name: README
+description: |
+  # example-filter
+
+  Example loot filter that allows you to configure highlighted and hidden
+  items.
+
+  Highlight/hides, when configured through alt-clicks in the game world, will
+  take precedence over all settings in this filter.
+*/
+/*@ define:module:highlight
+name: Highlight
+description: |
+  Configure items to highlight.
+*/
+
+/*@ define:input:highlight
+type: stringlist
+label: Highlight items
+*/
+#define VAR_HIGHLIGHT_ITEMS []
+
+/*@ define:input:highlight
+type: style
+label: Item highlight style
+*/
+#define VAR_HIGHLIGHT_STYLE \
+  textColor = "#ff0000";\
+  borderColor = "#ff0000";\
+  backgroundColor = "#80101010";
+
+rule (name:VAR_HIGHLIGHT_ITEMS) {
+  VAR_HIGHLIGHT_STYLE
+}
+/*@ define:module:hide
+name: Highlight
+description: |
+  Configure items to hide.
+*/
+
+/*@ define:input:hide
+type: stringlist
+label: Hide items
+*/
+#define VAR_HIDE_ITEMS ["Coins", "Ashes", "Vial", "Seaweed"]
+
+rule (name:VAR_HIDE_ITEMS) {
+  hidden = true;
+}

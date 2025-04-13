@@ -1,0 +1,11 @@
+/*@ define:module:readme
+name: README
+description: |
+  # example-filter
+
+  Example loot filter that allows you to configure highlighted and hidden
+  items.
+
+  Highlight/hides, when configured through alt-clicks in the game world, will
+  take precedence over all settings in this filter.
+*/

@@ -1,0 +1,15 @@
+/*@ define:module:hide
+name: Highlight
+description: |
+  Configure items to hide.
+*/
+
+/*@ define:input:hide
+type: stringlist
+label: Hide items
+*/
+#define VAR_HIDE_ITEMS ["Coins", "Ashes", "Vial", "Seaweed"]
+
+rule (name:VAR_HIDE_ITEMS) {
+  hidden = true;
+}
