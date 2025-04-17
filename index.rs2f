@@ -34,7 +34,7 @@ rule (name:VAR_HIGHLIGHT_ITEMS) {
   VAR_HIGHLIGHT_STYLE
 }
 /*@ define:module:hide
-name: Highlight
+name: Hide
 description: |
   Configure items to hide.
 */

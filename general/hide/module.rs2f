@@ -1,5 +1,5 @@
 /*@ define:module:hide
-name: Highlight
+name: Hide
 description: |
   Configure items to hide.
 */
